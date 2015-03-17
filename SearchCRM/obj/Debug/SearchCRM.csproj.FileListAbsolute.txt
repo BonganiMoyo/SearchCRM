@@ -1,0 +1,10 @@
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\bin\Debug\SearchCRM.exe.config
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\bin\Debug\SearchCRM.exe
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\bin\Debug\SearchCRM.pdb
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\bin\Debug\EntityFramework.dll
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\bin\Debug\EntityFramework.xml
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\obj\Debug\SearchCRM.csprojResolveAssemblyReference.cache
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\obj\Debug\SearchCRM.exe
+C:\Users\bonganim\Documents\GitHub\SearchCRM\SearchCRM\obj\Debug\SearchCRM.pdb

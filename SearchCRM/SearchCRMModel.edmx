@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Crm_MSCRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Crm_MSCRM.dbo.WebResource' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="WebResource">
+          <Key>
+            <PropertyRef Name="WebResourceId" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="WebResourceType" />
+            <PropertyRef Name="OrganizationId" />
+            <PropertyRef Name="SolutionId" />
+            <PropertyRef Name="OverwriteTime" />
+            <PropertyRef Name="ComponentState" />
+            <PropertyRef Name="WebResourceIdUnique" />
+            <PropertyRef Name="IsManaged" />
+            <PropertyRef Name="IsCustomizable" />
+            <PropertyRef Name="CanBeDeleted" />
+            <PropertyRef Name="IsHidden" />
+            <PropertyRef Name="IsEnabledForMobileClient" />
+          </Key>
+          <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+          <Property Name="OrganizationIdName" Type="nvarchar" MaxLength="160" />
+          <Property Name="WebResourceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Content" Type="varchar(max)" />
+          <Property Name="SilverlightVersion" Type="nvarchar" MaxLength="20" />
+          <Property Name="WebResourceType" Type="int" Nullable="false" />
+          <Property Name="OrganizationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SolutionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SupportingSolutionId" Type="uniqueidentifier" />
+          <Property Name="OverwriteTime" Type="datetime" Nullable="false" />
+          <Property Name="ComponentState" Type="int" Nullable="false" />
+          <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="uniqueidentifier" />
+          <Property Name="WebResourceIdUnique" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+          <Property Name="LanguageCode" Type="int" />
+          <Property Name="IsManaged" Type="bit" Nullable="false" />
+          <Property Name="IsCustomizable" Type="bit" Nullable="false" />
+          <Property Name="CanBeDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsHidden" Type="bit" Nullable="false" />
+          <Property Name="IntroducedVersion" Type="nvarchar" MaxLength="48" />
+          <Property Name="IsEnabledForMobileClient" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Crm_MSCRMModelStoreContainer">
+          <EntitySet Name="WebResource" EntityType="Self.WebResource" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [WebResource].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+    [WebResource].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+    [WebResource].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+    [WebResource].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+    [WebResource].[OrganizationIdName] AS [OrganizationIdName], 
+    [WebResource].[WebResourceId] AS [WebResourceId], 
+    [WebResource].[Name] AS [Name], 
+    [WebResource].[DisplayName] AS [DisplayName], 
+    [WebResource].[Description] AS [Description], 
+    [WebResource].[Content] AS [Content], 
+    [WebResource].[SilverlightVersion] AS [SilverlightVersion], 
+    [WebResource].[WebResourceType] AS [WebResourceType], 
+    [WebResource].[OrganizationId] AS [OrganizationId], 
+    [WebResource].[SolutionId] AS [SolutionId], 
+    [WebResource].[SupportingSolutionId] AS [SupportingSolutionId], 
+    [WebResource].[OverwriteTime] AS [OverwriteTime], 
+    [WebResource].[ComponentState] AS [ComponentState], 
+    [WebResource].[VersionNumber] AS [VersionNumber], 
+    [WebResource].[ModifiedOn] AS [ModifiedOn], 
+    [WebResource].[ModifiedBy] AS [ModifiedBy], 
+    [WebResource].[CreatedOn] AS [CreatedOn], 
+    [WebResource].[CreatedBy] AS [CreatedBy], 
+    [WebResource].[WebResourceIdUnique] AS [WebResourceIdUnique], 
+    [WebResource].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+    [WebResource].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+    [WebResource].[LanguageCode] AS [LanguageCode], 
+    [WebResource].[IsManaged] AS [IsManaged], 
+    [WebResource].[IsCustomizable] AS [IsCustomizable], 
+    [WebResource].[CanBeDeleted] AS [CanBeDeleted], 
+    [WebResource].[IsHidden] AS [IsHidden], 
+    [WebResource].[IntroducedVersion] AS [IntroducedVersion], 
+    [WebResource].[IsEnabledForMobileClient] AS [IsEnabledForMobileClient]
+    FROM [dbo].[WebResource] AS [WebResource]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Crm_MSCRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="WebResource">
+          <Key>
+            <PropertyRef Name="WebResourceId" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="WebResourceType" />
+            <PropertyRef Name="OrganizationId" />
+            <PropertyRef Name="SolutionId" />
+            <PropertyRef Name="OverwriteTime" />
+            <PropertyRef Name="ComponentState" />
+            <PropertyRef Name="WebResourceIdUnique" />
+            <PropertyRef Name="IsManaged" />
+            <PropertyRef Name="IsCustomizable" />
+            <PropertyRef Name="CanBeDeleted" />
+            <PropertyRef Name="IsHidden" />
+            <PropertyRef Name="IsEnabledForMobileClient" />
+          </Key>
+          <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="OrganizationIdName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="WebResourceId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SilverlightVersion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="WebResourceType" Type="Int32" Nullable="false" />
+          <Property Name="OrganizationId" Type="Guid" Nullable="false" />
+          <Property Name="SolutionId" Type="Guid" Nullable="false" />
+          <Property Name="SupportingSolutionId" Type="Guid" />
+          <Property Name="OverwriteTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ComponentState" Type="Int32" Nullable="false" />
+          <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Guid" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Guid" />
+          <Property Name="WebResourceIdUnique" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+          <Property Name="CreatedOnBehalfBy" Type="Guid" />
+          <Property Name="LanguageCode" Type="Int32" />
+          <Property Name="IsManaged" Type="Boolean" Nullable="false" />
+          <Property Name="IsCustomizable" Type="Boolean" Nullable="false" />
+          <Property Name="CanBeDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="IsHidden" Type="Boolean" Nullable="false" />
+          <Property Name="IntroducedVersion" Type="String" MaxLength="48" FixedLength="false" Unicode="true" />
+          <Property Name="IsEnabledForMobileClient" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Crm_MSCRMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="WebResources" EntityType="Self.WebResource" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Crm_MSCRMModelStoreContainer" CdmEntityContainer="Crm_MSCRMEntities">
+          <EntitySetMapping Name="WebResources">
+            <EntityTypeMapping TypeName="Crm_MSCRMModel.WebResource">
+              <MappingFragment StoreEntitySet="WebResource">
+                <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+                <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+                <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+                <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+                <ScalarProperty Name="OrganizationIdName" ColumnName="OrganizationIdName" />
+                <ScalarProperty Name="WebResourceId" ColumnName="WebResourceId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="SilverlightVersion" ColumnName="SilverlightVersion" />
+                <ScalarProperty Name="WebResourceType" ColumnName="WebResourceType" />
+                <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+                <ScalarProperty Name="SolutionId" ColumnName="SolutionId" />
+                <ScalarProperty Name="SupportingSolutionId" ColumnName="SupportingSolutionId" />
+                <ScalarProperty Name="OverwriteTime" ColumnName="OverwriteTime" />
+                <ScalarProperty Name="ComponentState" ColumnName="ComponentState" />
+                <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="WebResourceIdUnique" ColumnName="WebResourceIdUnique" />
+                <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+                <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+                <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+                <ScalarProperty Name="IsManaged" ColumnName="IsManaged" />
+                <ScalarProperty Name="IsCustomizable" ColumnName="IsCustomizable" />
+                <ScalarProperty Name="CanBeDeleted" ColumnName="CanBeDeleted" />
+                <ScalarProperty Name="IsHidden" ColumnName="IsHidden" />
+                <ScalarProperty Name="IntroducedVersion" ColumnName="IntroducedVersion" />
+                <ScalarProperty Name="IsEnabledForMobileClient" ColumnName="IsEnabledForMobileClient" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

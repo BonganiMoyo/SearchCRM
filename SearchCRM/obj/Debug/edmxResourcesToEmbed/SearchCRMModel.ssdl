@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Crm_MSCRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Crm_MSCRM.dbo.WebResource' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="WebResource">
+    <Key>
+      <PropertyRef Name="WebResourceId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="WebResourceType" />
+      <PropertyRef Name="OrganizationId" />
+      <PropertyRef Name="SolutionId" />
+      <PropertyRef Name="OverwriteTime" />
+      <PropertyRef Name="ComponentState" />
+      <PropertyRef Name="WebResourceIdUnique" />
+      <PropertyRef Name="IsManaged" />
+      <PropertyRef Name="IsCustomizable" />
+      <PropertyRef Name="CanBeDeleted" />
+      <PropertyRef Name="IsHidden" />
+      <PropertyRef Name="IsEnabledForMobileClient" />
+    </Key>
+    <Property Name="ModifiedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedOnBehalfByYomiName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ModifiedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+    <Property Name="CreatedOnBehalfByName" Type="nvarchar" MaxLength="200" />
+    <Property Name="OrganizationIdName" Type="nvarchar" MaxLength="160" />
+    <Property Name="WebResourceId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Content" Type="varchar(max)" />
+    <Property Name="SilverlightVersion" Type="nvarchar" MaxLength="20" />
+    <Property Name="WebResourceType" Type="int" Nullable="false" />
+    <Property Name="OrganizationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SolutionId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SupportingSolutionId" Type="uniqueidentifier" />
+    <Property Name="OverwriteTime" Type="datetime" Nullable="false" />
+    <Property Name="ComponentState" Type="int" Nullable="false" />
+    <Property Name="VersionNumber" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="ModifiedBy" Type="uniqueidentifier" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="WebResourceIdUnique" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedOnBehalfBy" Type="uniqueidentifier" />
+    <Property Name="CreatedOnBehalfBy" Type="uniqueidentifier" />
+    <Property Name="LanguageCode" Type="int" />
+    <Property Name="IsManaged" Type="bit" Nullable="false" />
+    <Property Name="IsCustomizable" Type="bit" Nullable="false" />
+    <Property Name="CanBeDeleted" Type="bit" Nullable="false" />
+    <Property Name="IsHidden" Type="bit" Nullable="false" />
+    <Property Name="IntroducedVersion" Type="nvarchar" MaxLength="48" />
+    <Property Name="IsEnabledForMobileClient" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Crm_MSCRMModelStoreContainer">
+    <EntitySet Name="WebResource" EntityType="Self.WebResource" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [WebResource].[ModifiedOnBehalfByYomiName] AS [ModifiedOnBehalfByYomiName], 
+    [WebResource].[CreatedOnBehalfByYomiName] AS [CreatedOnBehalfByYomiName], 
+    [WebResource].[ModifiedOnBehalfByName] AS [ModifiedOnBehalfByName], 
+    [WebResource].[CreatedOnBehalfByName] AS [CreatedOnBehalfByName], 
+    [WebResource].[OrganizationIdName] AS [OrganizationIdName], 
+    [WebResource].[WebResourceId] AS [WebResourceId], 
+    [WebResource].[Name] AS [Name], 
+    [WebResource].[DisplayName] AS [DisplayName], 
+    [WebResource].[Description] AS [Description], 
+    [WebResource].[Content] AS [Content], 
+    [WebResource].[SilverlightVersion] AS [SilverlightVersion], 
+    [WebResource].[WebResourceType] AS [WebResourceType], 
+    [WebResource].[OrganizationId] AS [OrganizationId], 
+    [WebResource].[SolutionId] AS [SolutionId], 
+    [WebResource].[SupportingSolutionId] AS [SupportingSolutionId], 
+    [WebResource].[OverwriteTime] AS [OverwriteTime], 
+    [WebResource].[ComponentState] AS [ComponentState], 
+    [WebResource].[VersionNumber] AS [VersionNumber], 
+    [WebResource].[ModifiedOn] AS [ModifiedOn], 
+    [WebResource].[ModifiedBy] AS [ModifiedBy], 
+    [WebResource].[CreatedOn] AS [CreatedOn], 
+    [WebResource].[CreatedBy] AS [CreatedBy], 
+    [WebResource].[WebResourceIdUnique] AS [WebResourceIdUnique], 
+    [WebResource].[ModifiedOnBehalfBy] AS [ModifiedOnBehalfBy], 
+    [WebResource].[CreatedOnBehalfBy] AS [CreatedOnBehalfBy], 
+    [WebResource].[LanguageCode] AS [LanguageCode], 
+    [WebResource].[IsManaged] AS [IsManaged], 
+    [WebResource].[IsCustomizable] AS [IsCustomizable], 
+    [WebResource].[CanBeDeleted] AS [CanBeDeleted], 
+    [WebResource].[IsHidden] AS [IsHidden], 
+    [WebResource].[IntroducedVersion] AS [IntroducedVersion], 
+    [WebResource].[IsEnabledForMobileClient] AS [IsEnabledForMobileClient]
+    FROM [dbo].[WebResource] AS [WebResource]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

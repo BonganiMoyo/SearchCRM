@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Crm_MSCRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="WebResource">
+    <Key>
+      <PropertyRef Name="WebResourceId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="WebResourceType" />
+      <PropertyRef Name="OrganizationId" />
+      <PropertyRef Name="SolutionId" />
+      <PropertyRef Name="OverwriteTime" />
+      <PropertyRef Name="ComponentState" />
+      <PropertyRef Name="WebResourceIdUnique" />
+      <PropertyRef Name="IsManaged" />
+      <PropertyRef Name="IsCustomizable" />
+      <PropertyRef Name="CanBeDeleted" />
+      <PropertyRef Name="IsHidden" />
+      <PropertyRef Name="IsEnabledForMobileClient" />
+    </Key>
+    <Property Name="ModifiedOnBehalfByYomiName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOnBehalfByYomiName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOnBehalfByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOnBehalfByName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OrganizationIdName" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+    <Property Name="WebResourceId" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DisplayName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SilverlightVersion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="WebResourceType" Type="Int32" Nullable="false" />
+    <Property Name="OrganizationId" Type="Guid" Nullable="false" />
+    <Property Name="SolutionId" Type="Guid" Nullable="false" />
+    <Property Name="SupportingSolutionId" Type="Guid" />
+    <Property Name="OverwriteTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ComponentState" Type="Int32" Nullable="false" />
+    <Property Name="VersionNumber" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="WebResourceIdUnique" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedOnBehalfBy" Type="Guid" />
+    <Property Name="CreatedOnBehalfBy" Type="Guid" />
+    <Property Name="LanguageCode" Type="Int32" />
+    <Property Name="IsManaged" Type="Boolean" Nullable="false" />
+    <Property Name="IsCustomizable" Type="Boolean" Nullable="false" />
+    <Property Name="CanBeDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="IsHidden" Type="Boolean" Nullable="false" />
+    <Property Name="IntroducedVersion" Type="String" MaxLength="48" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabledForMobileClient" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Crm_MSCRMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="WebResources" EntityType="Self.WebResource" />
+  </EntityContainer>
+</Schema>

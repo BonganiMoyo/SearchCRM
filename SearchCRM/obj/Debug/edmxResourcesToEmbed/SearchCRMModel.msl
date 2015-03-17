@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Crm_MSCRMModelStoreContainer" CdmEntityContainer="Crm_MSCRMEntities">
+    <EntitySetMapping Name="WebResources">
+      <EntityTypeMapping TypeName="Crm_MSCRMModel.WebResource">
+        <MappingFragment StoreEntitySet="WebResource">
+          <ScalarProperty Name="ModifiedOnBehalfByYomiName" ColumnName="ModifiedOnBehalfByYomiName" />
+          <ScalarProperty Name="CreatedOnBehalfByYomiName" ColumnName="CreatedOnBehalfByYomiName" />
+          <ScalarProperty Name="ModifiedOnBehalfByName" ColumnName="ModifiedOnBehalfByName" />
+          <ScalarProperty Name="CreatedOnBehalfByName" ColumnName="CreatedOnBehalfByName" />
+          <ScalarProperty Name="OrganizationIdName" ColumnName="OrganizationIdName" />
+          <ScalarProperty Name="WebResourceId" ColumnName="WebResourceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="SilverlightVersion" ColumnName="SilverlightVersion" />
+          <ScalarProperty Name="WebResourceType" ColumnName="WebResourceType" />
+          <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+          <ScalarProperty Name="SolutionId" ColumnName="SolutionId" />
+          <ScalarProperty Name="SupportingSolutionId" ColumnName="SupportingSolutionId" />
+          <ScalarProperty Name="OverwriteTime" ColumnName="OverwriteTime" />
+          <ScalarProperty Name="ComponentState" ColumnName="ComponentState" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="WebResourceIdUnique" ColumnName="WebResourceIdUnique" />
+          <ScalarProperty Name="ModifiedOnBehalfBy" ColumnName="ModifiedOnBehalfBy" />
+          <ScalarProperty Name="CreatedOnBehalfBy" ColumnName="CreatedOnBehalfBy" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+          <ScalarProperty Name="IsManaged" ColumnName="IsManaged" />
+          <ScalarProperty Name="IsCustomizable" ColumnName="IsCustomizable" />
+          <ScalarProperty Name="CanBeDeleted" ColumnName="CanBeDeleted" />
+          <ScalarProperty Name="IsHidden" ColumnName="IsHidden" />
+          <ScalarProperty Name="IntroducedVersion" ColumnName="IntroducedVersion" />
+          <ScalarProperty Name="IsEnabledForMobileClient" ColumnName="IsEnabledForMobileClient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
